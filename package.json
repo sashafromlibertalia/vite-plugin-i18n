@@ -1,0 +1,36 @@
+{
+  "name": "vite-plugin-i18n",
+  "version": "1.0.0",
+  "description": "Плагин для работы с i18n в Vite проектах",
+  "author": "Alexander Miroshnichenko",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sashafromlibertalia/vite-plugin-i18n.git"
+  },
+  "private": false,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "peerDependencies": {
+    "vite": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": "22.14.0",
+    "pnpm": "10.8.0"
+  },
+  "packageManager": "pnpm@10.8.0"
+}

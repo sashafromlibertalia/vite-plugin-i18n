@@ -1,0 +1,26 @@
+name: Publish package to npm Registry
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  publish-plugin:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+          registry-url: 'https://registry.npmjs.org/'
+      - run: corepack enable
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build package
+        run: pnpm build
+      - name: Publish package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
