@@ -5,7 +5,7 @@
   "author": "Aleksandr Miroshnichenko",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sashafromlibertalia/vite-plugin-i18n.git"
+    "url": "git+https://github.com/sashafromlibertalia/vite-plugin-i18n.git"
   },
   "private": false,
   "type": "module",
