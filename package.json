@@ -1,6 +1,6 @@
 {
   "name": "@builtbysasha/vite-plugin-i18n",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Плагин для работы с i18n в Vite проектах",
   "author": "Aleksandr Miroshnichenko",
   "repository": {
@@ -14,9 +14,6 @@
   "files": [
     "dist"
   ],
-  "exports": {
-    ".": "./dist/index.js"
-  },
   "scripts": {
     "build": "tsup"
   },
